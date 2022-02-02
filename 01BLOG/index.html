@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Lexend+Deca:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>BLOG</title>
+</head>
+<body>
+    <header>
+         <nav>
+             <h1>Codelândia</h1>
+             <h1>blog</h1>
+         </nav>
+         <div class="buscar">
+            <ion-icon name="search-outline" ></ion-icon>
+             <input type="text" placeholder="Pesquisar no blog">
+
+         </div>
+    </header>
+    <main>
+     
+        <div class="botoes">
+            <p>Visualizar em: </p>
+            <ion-icon class="grade" onclick="changeStyle()" name="grid-outline"></ion-icon>
+            <ion-icon class="lista" onclick="mudarStyle()" name="list-outline"></ion-icon>
+
+        </div>
+    <div class="cards">
+        <div class="card">
+            <div class="infoTopo">
+                <span class="data">29 de jan, 2022</span>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <div class="conteudo">
+                <h2 class="titulo">
+                   Escolher
+                </h2>
+                <p>Focar é escolher, escolher é abdicar, abdicar é perder. </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="infoTopo">
+                <span class="data">28 de jan, 2022</span>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <div class="conteudo">
+                <h2 class="titulo">
+                    Mudança
+                </h2>
+                <p>Não podemos ter mudança sem perda, motivo pelo qual é tão frequente as pessoas dizerem que querem mudar, mas mesmo assim continuarem iguais.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="infoTopo">
+                <span class="data">27 de jan, 2022</span>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <div class="conteudo">
+                <h2 class="titulo">
+                    Compaixão idiota
+                </h2>
+                <p>Você evita balançar o barco para poupar o sentimento das pessoas, ainda que o barco precise ser balançado, e sua compaixão  acabe sendo mais nociva do que sua honestidade. O medo de magoar que amamos as vezes é maior que a verdade</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="infoTopo">
+                <span class="data">26 de jan, 2022</span>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <div class="conteudo">
+                <h2 class="titulo">
+                    Compaixão sabia
+                </h2>
+                <p>O oposto da compaixão idiota, é se importar com a pessoa e mesmo assim falar a verdade. Verdade sem amor é só crueldade</p>
+            </div>
+        </div>
+
+       
+
+       <div class="card">
+        <div class="infoTopo">
+            <span class="data">25 de jan, 2022</span>
+            <ion-icon name="heart-outline"></ion-icon>
+        </div>
+        <div class="conteudo">
+            <h2 class="titulo">
+                Intervalo
+            </h2>
+            <p>Existe um intervalo entre o estimulo e a resposta. nesse intervalo está nosso poder de escolha para a nossa resposta. Em nossa resposta, está nosso crescimento e a nossa liberdade ( ao respirar, contar a até dez, esfriar a cabeça, estamos decidindo como reagir perante a qualquer situação)
+
+            </p>
+        </div>
+    </div>
+
+   </div>
+</div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+       
+    
+        function changeStyle() {
+        document.querySelector(".cards").className = "grid";
+       
+        }
+
+        function mudarStyle() {
+            document.querySelector(".grid").className = "cards";
+        }
+
+
+    
+       
+       
+    
+
+
+
+    </script>
+</body>
+</html>
