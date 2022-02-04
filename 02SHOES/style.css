@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: #F9F9F9;
+}
+.promocao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9F9F9;
+    background: #181818;
+    height: 60px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.titulo{
+    background: #F9F9F9;
+    height: 60px;
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #181818;
+    padding: 10px;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./img/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino\ 1.png);
+    height: 378px;
+    background-repeat: no-repeat;
+    color: #F9F9F9;
+    padding-left: 100px;
+    background-size: cover;
+    background-position: center;
+    
+  
+}
+
+.banner::before{
+    content: "";
+    background-color: rgba(4, 62, 103, 0.5);
+}
+
+
+
+.banner h1{
+    color: #F9F9F9;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.banner p{
+    color: #F9F9F9;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+    
+}
+.texto{
+    margin-top: 60px;
+    text-align: center;
+}
+.texto h1{
+    font-weight: 600;
+    font-size: 32px;
+    color: #181818
+}
+
+.texto p{
+    font-weight: 500;
+    font-size: 18px;
+    color: #474747
+}
+
+.tenis{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #EBE9EA;
+    height: 302px;
+}
+
+@media(max-width: 767px){
+.produtos{
+    grid-template-columns: 1fr;
+}
+
+}

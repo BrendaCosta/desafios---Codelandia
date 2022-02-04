@@ -47,6 +47,7 @@ input{
     border: none;
     font-size: 18px;
     padding: 5px;
+   
 }
 input ion-icon{
     margin-right: 20px;
@@ -123,6 +124,9 @@ main{
 
     .buscar{
         width: fit-content;
+    }
+    input{
+        text-align: center;
     }
     main{
         padding: 1rem;
