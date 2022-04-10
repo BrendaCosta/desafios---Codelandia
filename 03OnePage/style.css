@@ -1,0 +1,199 @@
+ *{
+     margin:0;
+     padding: 0;
+    
+    }
+
+    main{
+        background-color:#D7D5FF ;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    main h1{
+        
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 47px;
+    }
+
+   
+   
+
+    p{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 1rem;
+    }
+
+    button{
+        width: 155px;
+        height: 50px;
+        left: 101px;
+        background: #6C63FF;
+        box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        margin-top: 1rem;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .conteudo{
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        padding: 3rem;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+
+    .cor{
+       
+        width: 340px;
+        height: 222px;
+    }
+
+     .c1{
+        background-color: #FF6363;
+    }
+    .c2{
+        background-color: #63ECFF;
+    }
+    .c3{
+        background-color: #F363FF;
+    }
+    .c4{
+        background-color: #63FF73;
+    }
+    .c5{
+        background-color: #FFDD63;
+    }
+    .c6{
+        background-color: #6663FF;
+    }
+
+    .info{
+        width: 340px;
+        height: 323px; 
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        padding-top: 1rem;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px; 
+        margin-left: 1rem;
+        
+    }
+    .info p{
+        margin:  0 1rem;
+    }
+    section{
+        
+        background: #D7D5FF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .form{
+        width: 470px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    section h3{
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        color: #2B2B2B;
+        padding-top:  2rem;
+        padding-bottom:  2rem;
+    }
+    input{
+        background: #FFFFFF;
+        border-radius: 6px;
+        width: 100%;
+        height: 50px;
+        border: none;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+    }
+    textarea{
+        background: #FFFFFF;
+        border-radius: 6px;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+        border: none;
+        resize: none;
+    }
+    section button{
+        width: 100%;
+    }
+
+
+    @media (max-width: 768px){
+        main{
+            flex-direction: column;
+        }
+        main h1{
+            font-size: 32px;
+        }
+        p{
+            font-size: 18px;
+        }
+        main img{
+            width: 80%;
+        }
+        .form{
+            width: 100%;
+        }
+
+        .cor{
+            width: 300px;
+            height: 222px;
+        }
+        .info{
+            width: 300px;
+            
+        }
+        input,
+        textarea,
+        section button{
+            width: 280px;
+        }
+        
+
+    }
+
+    @media screen and (min-width: 1200px){
+    main .texto{
+        width: 600px;
+        margin-left: 3rem;
+    }
+}
