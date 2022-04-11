@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.back{
+    display: flex;
+    align-items: center;
+    background: #F7FAFC;
+    justify-content: center;
+}
+
+.back img{
+    width: 50%;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+h3{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h1{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 2rem;
+}
+label{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1A202C;
+    margin-bottom: 0.5rem;
+}
+
+input{
+    border:none;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 50px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+}
+
+.check label{
+    margin-left: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #2B6CB0;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.links input,
+.links label{
+   
+    margin-bottom: 0!important;
+}
+.botao{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    margin-bottom: 10px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.entrar{
+    background: #04C45C;
+}
+
+.google{
+    background: #1A202C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google img{
+    margin-right: 10px;
+}
+.cadastro{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1A202C;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px){
+
+    .back{
+        display: none;
+    }
+
+    .form{
+        width: 100%;
+    }
+}
