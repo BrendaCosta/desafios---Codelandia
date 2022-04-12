@@ -76,9 +76,13 @@ button{
     line-height: 180%;
     text-transform: uppercase;
     color: #F9F9F9;
+    transform: skew(-15deg, 0deg);
     
 
 }
+button span {
+    transform: skew(15deg, 0deg);
+  }
 
 button:hover{
     border: 3px solid #658E76;
