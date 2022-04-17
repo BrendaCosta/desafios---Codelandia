@@ -1,0 +1,233 @@
+:root  {
+    --cor-texto: #2F2F2F;
+    --borda-botao: #EAEAEA;
+    --botao-ativo: #6610F2;
+  }
+
+body{
+    background: #F9F9F9;
+    padding: 0 5rem;
+    margin: 0 5rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--cor-texto);
+}
+.botoes{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.busca{
+    background: #FFFFFF;
+    border: 2px solid var(--borda-botao);
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.luz{
+    width: 30px;
+    height: 30px;
+}
+
+.escuro{
+    background: #1f1e1e;
+    
+}
+
+.escuro-texto{
+    color: #F9F9F9!important;
+}
+
+button{
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 183px;
+    height: 49px;
+    text-transform: uppercase;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--cor-texto);
+   
+    border: 2px solid #EAEAEA;
+}
+h1:hover{
+    color: var(--botao-ativo);
+    font-weight: 600;
+    cursor: pointer;
+}
+.busca:hover,
+button:hover{
+    border: 2px solid var(--botao-ativo);
+    color: var(--botao-ativo);
+    font-weight: 600;
+    cursor: pointer;
+}
+main{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    margin-top: 50px;
+  
+}
+
+
+.icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.losango{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(136.92deg, #2DC7ED 3.14%, rgba(45, 199, 237, 0) 100%);
+    transform: rotate(45deg);
+}
+.icone img{
+    position: relative;
+    width: 100px
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titulo h3{
+    text-transform: uppercase;
+    color: var(--cor-texto);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.titulo h1{
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 70px;
+    text-align: center;
+    color: var(--cor-texto);
+    margin-top: 0;
+}
+
+.circulo{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(270deg, #F2C94C 0%, rgba(242, 201, 76, 0) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ativo{
+    background: #6610F2;
+    border-radius: 10px;
+    color: var(--borda-botao);
+}
+
+.ativo:hover{
+    color: var(--borda-botao);
+    font-weight: 600;
+    cursor: pointer;
+}
+.emojis{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    flex-direction: row;
+    gap: 162px;
+    width: 100%;
+    
+}
+
+.meio{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+.quadrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(136.92deg, #EF7C89 3.14%, rgba(239, 124, 137, 0) 100%);
+    border-radius: 30px;
+}
+
+.triangulo{
+    position: absolute;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 150px solid #00E861;
+  /*  border-image: linear-gradient(180deg, #00E861 0%, rgba(0, 232, 97, 0) 100%);*/
+}
+
+.triangulo img{
+    position: absolute;
+    left: -73px;
+    margin-top: 18px;
+    width: 150px;
+}
+.boy{
+    background: linear-gradient(270deg, #7248EC 0%, rgba(114, 72, 236, 0) 100%);
+}
+
+
+.rodape{
+    background: #FCFCFC;
+    margin-top: 150px;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.autor{
+    text-transform: uppercase;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    opacity: 0.75;
+    color: var(--cor-texto);
+    border-left: 3px solid var(--botao-ativo);
+    padding-left: 10px;
+
+}
+p{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--cor-texto);
+}

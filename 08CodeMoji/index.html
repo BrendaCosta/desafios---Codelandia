@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Sen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CodeMoji</title>
+</head>
+<body>
+    <nav>
+       <div>
+        <h1>
+            CodeMoji
+        </h1>
+       </div>
+        <div class="botoes">
+            <div class="busca">
+                <img src="./img/search.png" alt="">
+            </div>
+            <button>Fazer Login</button>
+            <div class="busca" onclick="mudarcor()">
+                <img class="luz" src="./img/lightbulb-solid.svg" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="icone">
+            <div class="losango"></div>
+                <img src="./img/Memoji Girls 10-9.png" alt="" >
+            
+        </div>
+        <div class="titulo">
+            <h3>
+                Lorem ipsum dolor sit amet
+            </h3>
+
+            <h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            </h1>
+            
+        </div>
+        <div class="icone">
+            <div class="circulo">
+                <img src="./img/Memoji Girls 3-11.png" alt="" srcset="">
+            </div>
+        </div>
+    </main>
+
+
+
+    <div class="emojis">
+        <div class="icone">
+            <div class="quadrado">
+                <img src="./img/Memoji Boys 2-7.png" alt="">
+            </div>
+        </div>
+
+<div class="meio">
+    <div class="botoes">
+        <button class="ativo">Criar Memoji</button>
+        <button>Ver biblioteca</button>
+    </div>
+    <div class="icone">
+        <div class="circulo boy">
+            <img src="./img/Memoji Boys 11-16.png" alt="">
+        </div>
+    </div>
+</div>
+        
+
+
+
+        <div class="icone">
+            <div class="triangulo">
+                <img src="./img/Memoji Girls 2-10.png" alt="">
+            </div>
+        </div>
+
+        
+
+
+
+    </div>
+
+
+    <div class="rodape">
+        <div class="citacao">
+            <p class="autor">NIKOLA TESLA</p>
+            <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, maiores. Natus facilis adipisci, porro asperiores, in nihil recusandae quibusdam deleniti consequuntur aliquam ullam esse. Harum dolorum quo doloribus velit asperiores."</p>
+        </div>
+
+        <div class="citacao">
+            <p class="autor">STEVE JOBS</p>
+            <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, maiores. Natus facilis adipisci, porro asperiores, in nihil recusandae quibusdam deleniti consequuntur aliquam ullam esse. Harum dolorum quo doloribus velit asperiores."</p>
+        </div>
+    </div>
+
+
+
+
+
+<script>
+
+
+var flag = true;
+
+function mudarcor() {
+    
+    if(flag = !flag){
+        escuro()
+    } else {
+        claro()
+    }
+}
+
+        function escuro() {
+        document.querySelector("body").className = "escuro";
+        document.querySelector("h1").className = "escuro-texto";
+        document.querySelector(".titulo h1").className = "escuro-texto"
+        document.querySelector(".titulo h3").className = "escuro-texto"
+        
+        }
+
+        function claro() {
+        document.querySelector("body").classList.remove("escuro");
+        document.querySelector("h1").classList.remove("escuro-texto");
+        document.querySelector(".titulo h1").classList.remove("escuro-texto");
+        document.querySelector(".titulo h3").classList.remove("escuro-texto");
+        
+        }
+  
+
+</script>
+
+
+
+</body>
+</html>
