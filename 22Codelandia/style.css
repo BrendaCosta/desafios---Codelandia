@@ -1,0 +1,242 @@
+body{
+    background: #0E091B;
+    color: #F9F9F9;
+    padding: 2rem 5rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+ul{
+    text-align: end;
+}
+li{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.menu{
+    display: none;
+}
+.esconde-menu{
+    display: block;
+}
+
+ion-icon{
+    font-size: 35px;
+}
+
+
+
+.logo h1{
+    font-size: 32px;
+}
+
+ .simbolo{
+    color: #873EFF;
+}
+
+.links{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+    color: #F9F9F9;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+}
+
+ .ativo{
+    border: 1px solid #873EFF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 3rem;
+
+
+}
+h3{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 31px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #04D361;
+    margin-bottom: 0;
+}
+h1{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.4rem;
+    color: #F9F9F9; 
+    margin: 0;
+}
+p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #AEAEAE;
+    margin-top: 0.5rem;
+}
+.projetos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+
+    
+}
+.card{
+    background: #171228;
+    border: 1px solid #873EFF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+.card:hover{
+   box-shadow: 10px 10px 10px #222222d1; 
+}
+.imagem-projeto img{
+    width: 100%;
+    height: 250px;
+    object-fit: scale-down;
+}
+.texto{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 31px;
+    color: #F9F9F9;
+    padding: 0 20px;
+}
+
+.texto p{
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+.botao{
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.botao a{
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 40px;
+    width: 165px;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.demo{
+    background: #04D361;
+    color: #0E091B;   
+}
+.demo:hover{
+    background: #171228;
+    border: 1px solid #04D361;
+    color: #F9F9F9;
+}
+
+.botao .git{
+    background: #171228;
+    border: 1px solid #873EFF;
+    border-radius: 8px; 
+    border: 1px solid #04D361;
+    color: #F9F9F9;
+    width: 180px;
+}
+.git:hover{
+    background: #04D361;
+    color: #0E091B; 
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+
+
+footer .simbolo{
+     font-size: 48px!important;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  
+}
+.info p{
+    margin: 0;
+}
+@media (min-width: 767px){
+    #menu{
+        display: none;
+    }
+    .links {
+        display: flex;
+    }
+}
+@media (max-width: 768px){
+    body{
+        padding: 2rem 1rem;
+    }
+    main{
+        width: 100%;
+    }
+    h1{
+        font-size: 2.4rem;
+    }
+    .projetos{
+        grid-template-columns: 100%;
+    }
+    footer, 
+    .info{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .links{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
