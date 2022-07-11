@@ -1,0 +1,227 @@
+body{
+    background: #F9F9F9;
+    padding: 0 20rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav p,
+footer p{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #0C0C0C;
+}
+.busca{
+    background: #EBEBEB;
+    border-radius: 4px;
+    width: 644px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 10px;
+    height: 40px;
+}
+
+.busca input{
+    width: 100%;
+    height: 100%;
+    background: #EBEBEB;
+    border: none;
+}
+
+button{
+    background: #3772FF;
+    border-radius: 4px;
+    width: 188px;
+    height: 40px;
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 14px;
+    color: #F9F9F9;
+    text-transform: uppercase;
+    border: none;
+
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Inter';
+    color: #0C0C0C;
+}
+h1{
+    
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+}
+h2{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
+h3{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 0;
+}
+h4{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F9F9F9;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+h5{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #737373;
+    margin-top: 0.3rem;
+    text-align: center;
+}
+
+h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #EBEBEB;
+    margin-top: 0.3rem;
+}
+    
+p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #737373;
+}
+.numeros{
+    display: flex;
+    gap: 2rem;
+}
+
+.colecao{
+    display: flex;
+    align-items: center;
+    gap: 135px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.quadros{
+    display: flex;
+    gap: 54px;
+}
+.quadros li{
+    list-style: none;
+}
+.artistas{
+    display: flex;
+    gap: 20px;
+}
+.info_artista{
+    background-color: #53545566;
+    position: relative;
+    margin-top: -488px;
+    padding: 10px;
+    height: 461px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+ul{
+    display: flex;
+    gap: 55px;
+}
+li{
+    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-family: 'Inter';
+}
+
+@media (max-width: 767px){
+    body{
+        padding: 0 1rem;
+    }
+    .busca,
+    .imagem{
+        display: none;
+    }
+    nav{
+        gap: 50px;
+    }
+
+    .colecao,
+    .quadros,
+    .artistas,
+    footer{
+        flex-direction: column;
+    }
+    footer{
+        margin-top: 40px;
+    }
+    footer ul{
+        gap: 10px;
+        padding: 0;
+    }
+    footer p{
+        margin-bottom: 0.5rem;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .texto p{
+        font-size: 14px;
+    }
+    button{
+        width: 100%;
+    }
+    .numeros{
+       gap: 1rem; 
+    }
+    h3{
+        font-size: 24px;
+    }
+    .quadros{
+        gap: 1rem;
+        width: 100%;
+    }
+    .colecao{
+        gap: 0;
+    }
+    h2{
+        font-size: 20px;
+    }
+    li img{
+        width: 100%;
+    }
+    .artista img{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+    }
+    .info_artista {
+        margin-top: -334px;
+        height: 310px;
+    }
+
+    footer li{
+        font-size: 12px;
+    }
+}
