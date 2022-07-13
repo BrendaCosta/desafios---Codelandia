@@ -1,6 +1,6 @@
 body{
     background: #F9F9F9;
-    padding: 0 20rem;
+    padding: 0 10%;
 }
 nav{
     display: flex;
@@ -154,9 +154,21 @@ li{
     font-family: 'Inter';
 }
 
+@media (min-width: 1024px){
+    body{
+        padding: 0 20rem;
+    }
+}
+
+@media (min-width: 800px){
+    body{
+        padding: 0 4rem;
+    }
+}
+
 @media (max-width: 767px){
     body{
-        padding: 0 1rem;
+        padding: 0 2rem;
     }
     .busca,
     .imagem{
