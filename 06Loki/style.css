@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'B612 Mono', monospace;
+    color: #fff;
+}
+.background{
+    
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5)),url(./loki_back.png) no-repeat center/cover;
+    object-fit: contain;
+}
+.titulo{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    margin-top: 2rem;
+}
+
+h2{
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+.filme{
+    display: flex;
+    margin: 10rem  15rem;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.info_filme{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.dados_filmes{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+ion-icon{
+    font-size: 2rem;
+}
+.relogio{
+    display: flex;
+    gap: 0.5rem;
+}
+.estrela ion-icon{
+    color: yellow;
+}
+.estrela ion-icon:last-child{
+    color: rgba(255, 255, 255, 0.5);
+}
+button{
+    width: 184px;
+    height: 52px;
+    left: 487px;
+    top: 556px;
+    color: #fff;
+    background: #0072D2;
+    border-radius: 3px;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+button:last-child{
+    background: #131318;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px){
+    img{
+        display: none;
+    }
+    .filme{
+        margin: 15rem 1rem;
+        gap: 5rem;
+    }
+    ion-icon {
+        font-size: 1rem;
+    }
+    .dados_filmes{
+        gap: 20px;
+        font-size: 0.8rem;
+    }
+    .info_filme{
+        font-size: 0.8rem;
+    }
+}
