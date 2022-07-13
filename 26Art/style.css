@@ -12,7 +12,7 @@ nav p,
 footer p{
     font-family: 'Inter';
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 39px;
     color: #0C0C0C;
 }
@@ -165,6 +165,9 @@ li{
     nav{
         gap: 50px;
     }
+    nav button{
+        width: 50%;
+    }
 
     .colecao,
     .quadros,
@@ -193,6 +196,7 @@ li{
     }
     .numeros{
        gap: 1rem; 
+       justify-content: space-around;
     }
     h3{
         font-size: 24px;
@@ -205,7 +209,7 @@ li{
         gap: 0;
     }
     h2{
-        font-size: 20px;
+        font-size: 24px;
     }
     li img{
         width: 100%;
@@ -217,8 +221,8 @@ li{
         width: 100%;
     }
     .info_artista {
-        margin-top: -334px;
-        height: 310px;
+        margin-top: -450px;
+        height: 425px;
     }
 
     footer li{
